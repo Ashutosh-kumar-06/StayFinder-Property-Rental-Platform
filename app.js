@@ -23,7 +23,9 @@ main()
   });
 
 app.get("/", (req, res) => {
-  res.send("welcome to airbnb , enjoy bun with air");
+  res.send(
+    "<p>Welcome to Wonderlust</p> <button><a href='/listings'>View Listings</a></button>",
+  );
 });
 app.get("/listings", async (req, res) => {
   const allListings = await Listing.find({});
