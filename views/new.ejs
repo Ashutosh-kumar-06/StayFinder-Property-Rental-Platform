@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WonderLust</title>
+  </head>
+  <body>
+    <h3>Create new listing</h3>Title</label>
+    <form action="/listings" method="POST">
+      <div>
+        <label for="title"  class="form-label">
+          <input type="text" name="listing[title]" placeholder="enter title" class="form-control" />
+      </div>
+      <br>
+      <div>
+        <label for="description" class="form-label" >Description</label>
+        <br />
+          <textarea
+            name="listing[description]"
+            placeholder="enter description"
+            class="form-control"
+          ></textarea>
+      </div>
+        <br>
+      <div>
+        <label for="image" class="form-label">Image Link</label><br>
+        <input type="text" placeholder="enter image URL/Link" type="text" class="form-control"
+        >
+      </div>
+      <br>
+      <div>
+        <label for="price">Price</label>
+          <br>
+        <input
+        type="number"
+        name="listing[price]"
+        placeholder="enter price"
+        class="form-control"
+      />
+      </div>
+        <br>
+      <div>
+        <label for="location" class="form-label">location</label>  <br>
+        <input
+        type="text"
+        name="listing[location]"
+        placeholder="enter location"
+        class="form-control"
+      />
+      </div>
+        <br>
+      <div>
+        <label for="country" class="form-label">country</label>  <br>
+        <input
+        type="text"
+        name="listing[country]"
+        placeholder="enter country"
+        class="form-control"
+      />
+      </div>
+        <br>
+      <button class="btn btn-dark">add</button>
+    </form>
+  </body>
+</html>
